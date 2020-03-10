@@ -5,6 +5,8 @@
         <title>ShoppingList</title>
 
         <link rel="stylesheet" href="assets/style.css?ver=165310032020">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="assets/script.js?ver=165310032020"></script>
     </head>
     <body>
@@ -17,18 +19,7 @@
                     <h2>add your items here</h2>
                 </header>
                 <ul>
-                    <li class="item" id="item_5">
-                        <input type="checkbox" name="check_5">
-                        <span class="name">Milk</span>
-                    </li>
-                    <li class="item" id="item_9">
-                        <input type="checkbox" name="check_9">
-                        <span class="name">Bread</span>
-                    </li>
-                    <li class="item" id="item_11">
-                        <input type="checkbox" name="check_11">
-                        <span class="name">Cheerios</span>
-                    </li>
+                    <div id="items"></div>
                     <li class="add_item">
                         <input type="text" placeholder="Add Item">
                     </li>
@@ -55,4 +46,11 @@
             </div>
         </section>
     </body>
+    <template id="item">
+        <li class="item">
+            <input type="checkbox" class="checkbox">
+            <span class="name"></span>
+            <input class="edit">
+        </li>
+    </template>
 </html>

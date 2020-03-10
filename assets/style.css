@@ -44,6 +44,7 @@ h2, h2 span{
 #details {
     width: 485px;
     float: left;
+    display: none;
 }
 
 #list header, #details header{
@@ -71,6 +72,19 @@ h2, h2 span{
 
 #list ul li span{
     color: #999999;
+}
+
+#list ul li input.edit {
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    display: none;
+}
+
+#list ul li.checked span{
+    text-decoration: line-through
 }
 
 #list li.add_item input{
